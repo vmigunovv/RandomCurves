@@ -9,6 +9,9 @@
 class Circle : public Curve 
 {
 public:
+  // Default Constructor
+  Circle () : myRadius (1.) {}
+  
   // Sets radius and returns true  if theRadius is positive
   bool Init (double theRadius);
 

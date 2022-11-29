@@ -9,8 +9,8 @@
 class Ellipse : public Curve 
 {
 public:
-  Ellipse () = default;
-  ~Ellipse () = default;
+  // Default constructor
+  Ellipse () : myRx (2.), myRy (1.) {}
 
   // Sets axes and returns true if parameters are positive. Otherwise returns false
   bool Init (double theAxeX, double theAxeY);

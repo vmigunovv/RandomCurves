@@ -10,8 +10,8 @@
 class Helix : public Curve 
 {
 public:
-  Helix () = default;
-  ~Helix () = default;
+  // Default constructor
+  Helix () : myStep (1.), myRadius (1.) {}
 
   // Sets step and radius and returns true if parameters are positive. Otherwise returns false 
   bool Init (double theStep, double theRadius);
